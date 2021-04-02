@@ -6,6 +6,9 @@
 
 // @lc code=start
 class Solution {
+
+    // 使用双指针从两边往中间移动，如果右边有比左边高的，左指针所指的水位为指针左边
+    // 最大值减当前值，反之同理。
     public int trap(int[] height) {
         if (height.length <=2) {
             return 0;
